@@ -86,82 +86,59 @@
     line-height: 2.4em;
   }
   
-  .sobre,
-  .portfolio{
+  .content{
     background-color: #cdcdcd;
     padding: 2em;
-    min-height: 100vh;
+    min-height: 60vh;
   }
   
   @media (min-width: 1200px){
-    .sobre p,
-    .sobre h2,
-    .sobre .profile,
-    .container,
-    .portfolio h2,
-    .portfolio p{
+    .container{
       max-width: 1200px;
       margin-right: auto;
       margin-left: auto;
     }
   }
   
-  .sobre .profile img{
+  #sobre .profile img{
     float: right;
     margin-left: .5em;
     border-radius: 1em;
   }
   
   @media (max-width: 400px){
-    .sobre .profile,
-    .sobre .profile img{
+    #sobre .profile,
+    #sobre .profile img{
       float: none;
       text-align: center;
+      margin-bottom: 10px;
     }
   }
   
-  .sobre h2,
-  .portfolio h2{
+  .content h2{
     font-family: 'roboto', sans-serif;
     color: #333333;
     margin-bottom: 1.5em;
     font-size: 2em;
   }
   
-  .portfolio h2{
+  #portfolio h2{
     margin-bottom: 0.25em;
   }
   
-  .sobre  p{
+  .content  p{
     color: #333333;
     margin-bottom: .5em;
     text-align: justify;
     letter-spacing: -1px;
   }
 
+  .li-experiences{
+    margin-bottom: 20px;
+  }
+
   .sobre p:first-of-type{
     text-indent: 1em;
-  }
-  
-  .portfolio .grid{
-    display: grid;
-    gap: 2em;
-  }
-  
-  @media(min-width: 560px){
-    .portfolio .grid{
-      grid-template-columns: repeat(2, 240px);
-      justify-content: center;
-    }
-  }
-  
-  @media(min-width: 880px){
-    .portfolio .grid{
-      grid-template-columns: repeat(3, 260px);
-      align-content: center;
-      justify-content: center;
-      height: calc(100vh - 8em - 48px);
-    }
   }
   
   .portfolio figure{
